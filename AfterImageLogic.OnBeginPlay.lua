@@ -1,0 +1,11 @@
+return function (self) 
+self:Load("axe")
+self:Load("crossBow")
+self:Load("mace")
+self:Load("poleArm")
+self:Load("spear")
+self:Load("swordOL")
+self:Load("swordOS")
+self:Load("swordTL")
+self:Load("swordTS")
+end
