@@ -1,0 +1,15 @@
+return function (self) 
+local makeCharInfo = _ItemInfoMan.MakeCharInfo[self.Gender]
+local faceTable = makeCharInfo[0]
+local hairTable = makeCharInfo[1]
+local topTable = makeCharInfo[2]
+local pantsTable = makeCharInfo[3]
+local shoesTable = makeCharInfo[4]
+local weaponTable = makeCharInfo[5]
+self.Face = faceTable[_GlobalRand32:RandomIntegerRange(1, #faceTable)]
+self.Hair = hairTable[_GlobalRand32:RandomIntegerRange(1, #hairTable)]
+self.Top = topTable[_GlobalRand32:RandomIntegerRange(1, #topTable)]
+self.Pants = pantsTable[_GlobalRand32:RandomIntegerRange(1, #pantsTable)]
+self.Shoes = shoesTable[_GlobalRand32:RandomIntegerRange(1, #shoesTable)]
+self.Weapon = weaponTable[_GlobalRand32:RandomIntegerRange(1, #weaponTable)]
+end

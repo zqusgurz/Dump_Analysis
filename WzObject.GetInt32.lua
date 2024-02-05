@@ -1,0 +1,8 @@
+return function (self,propName,def) 
+---@type WzObject
+local o = self.Children[propName]
+if (o == nil) then
+	return def
+end
+return o:_GetValue_Int32()
+end
